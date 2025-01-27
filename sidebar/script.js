@@ -1,14 +1,7 @@
-// const navdialogue = document.getElementById("#nav-dialogue")
-// function handlemenu()
+const menuButton = document.getElementById('menu-button');
+const mobileMenu = document.getElementById('mobile-menu');
 
-// {
-//     navdialogue.classList.toggle("hidden");
-//     navdialogue.classList.toggle("show");
-// }
-
-
-let btn = document.querySelector("#btn");
-let sidebar = document.querySelector("#sidebar");
-function handlemenu(){
-    sidebar.classList.toggle('active');
-}
+menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('-translate-x-full');
+    console("ertyuio")
+});
