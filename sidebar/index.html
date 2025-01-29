@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,137 +11,136 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- style.css -->
-         <link rel="stylesheet" href="style.css"/>
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
-    <!-- header -->
-     <header class="hidden md:block overflow-hidden">
-        <div class=" flex flex-wrap">
-            <div class="flex flex-row gap-4 ml-15 mt-10">
-                <img src="./img/img1.jpg" alt="img" class="h-12 w-12 rounded-full">
-                <span class="flex flex-col">
-                    <h1 class="font-bold">Rix Methil</h1>
-                    <p class="text-sm text-gray-400">rix123@gmail.com</p>
-                </span>
-            </div>
-        </div>
-    
-
-     <nav class="left-0 w-70 justify-between bg-white-800 py-6 shadow-md flex flex-row overflow-hidden">
+    <div class="grid grid-cols-1 md:grid-cols-4 md:gap-2 gap-4">
         <!-- for desktop view -->
-        <div class=" mt-0 ml-15 h-full">
-           
+        <div class="w-full md:col-span-1 md:block hidden">
+            <header class="flex flex-wrap hidden lg:block overflow-hidden">
+                <div class=" flex flex-wrap">
+                    <div class="flex flex-row gap-4 ml-15 mt-10">
+                        <img src="./img/img1.jpg" alt="img" class="h-12 w-12 rounded-full">
+                        <span class="flex flex-col">
+                            <h1 class="font-bold">Rix Methil</h1>
+                            <p class="text-sm text-gray-400">rix123@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
 
-            <div class="flex flex-col gap-4 mt-10 text-gray-400">
-                <h1 class="text-[10px] text-gray-400">MANAGE</h1>
 
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                        class="fa-solid fa-chart-pie"></i>Dashboard</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-wallet"></i>My
-                    wallet</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                        class="fa-solid fa-calendar-days"></i>Calender</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                        class="fa-solid fa-tent-arrow-left-right"></i>Recent transation</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                        class="fa-solid fa-square-poll-vertical"></i>statistics</a>
-            </div>
-            <div class="flex flex-col gap-4 mt-10 text-gray-400">
-                <h1 class="text-[10px] text-gray-400">SETTINGS</h1>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-gear"></i>setting</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-message"></i>my
-                    message</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                        class="fa-solid fa-bell"></i>notification</a>
+                <nav class="left-0 w-70 justify-between bg-white-800 py-6 shadow-md flex flex-row overflow-hidden">
+                    <div class=" mt-0 ml-15 h-full">
 
-            </div>
-            <div class="flex flex-col gap-4 mt-20 text-gray-400">
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-moon"></i>theme</a>
-                <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                        class="fa-solid fa-right-from-bracket"></i>logout</a>
-            </div>
+
+                        <div class="flex flex-col gap-4 mt-10 text-gray-400">
+                            <h1 class="text-[10px] text-gray-400">MANAGE</h1>
+
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-chart-pie"></i>Dashboard</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-wallet"></i>My
+                                wallet</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-calendar-days"></i>Calender</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-tent-arrow-left-right"></i>Recent transation</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-square-poll-vertical"></i>statistics</a>
+                        </div>
+                        <div class="flex flex-col gap-4 mt-10 text-gray-400">
+                            <h1 class="text-[10px] text-gray-400">SETTINGS</h1>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-gear"></i>setting</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-message"></i>my
+                                message</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-bell"></i>notification</a>
+
+                        </div>
+                        <div class="flex flex-col gap-4 mt-20 text-gray-400">
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-moon"></i>theme</a>
+                            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                    class="fa-solid fa-right-from-bracket"></i>logout</a>
+                        </div>
+                    </div>
+
+                </nav>
+
+            </header>
         </div>
-
-    </nav> 
-
-</header>
-
-<!-- for bar view -->
-     <div class="flex flex-wrap">
-        <div id="menu()"
-            class="md:show lg:blockp-3 mt-3 flex flex-wrap bg-white justify-between items-center fixed top-0 left-75  right-0 z-50 shadow-md">
-            <button class="p-2" onclick="handlemenu()"> <i class="fa-solid fa-bars"></i></button>
-            <h1><i class="fa-solid fa-cloud text-blue-400"></i>cloud</h1>
-
+        <div class="col-span-3 flex flex-col">
+            <div class="flex justify-between px-6 py-6 shadow-md p-4">
+                <button class="p-2 lg:block " onclick="handlemenu()"><i class="fa-solid fa-bars"></i></button>
+                <h1><i class="fa-solid fa-cloud text-blue-400"></i>cloud</h1>
+            </div>
+            <p class="text-4xl text-gray-400 mb-50 md:hidden hidden lg:block">sidebar menu</p>
         </div>
-        <p class="text-4xl text-gray-400 mb-50 ml-75 -mt-140">sidebar menu</p>
     </div>
+    <div class=" w-full col-span-1 md:hidden block h-screen">
 
 
-    <!-- for icon -->
-
-    <!-- <header id="nav-dialouge" class="z-20 opacity-90 overflow-hidden inset-8">
-        <div class=" flex flex-wrap overflow-hidden">
-            <div class="flex flex-row gap-4 ml-15">
-                <img src="./img/img1.jpg" alt="img" class="h-12 w-12 rounded-full">
-               
-            </div>
-        </div>-->
-    
-
-    
-        
-        
 <!-- for mobile view -->
-  
-<div id="nav-dialouge" class="md:hidden p-2 bg-transparent">
-    <button class="p-2" onclick="handlemenu()"> </button>
-    <div class="left-0 w-70 mt-25 justify-between bg-white-800 flex flex-row overflow-hidden">
-        <div class="mt-0 ml-15 h-full md:ml-0 md:mt-10 md:flex md:flex-col md:justify-between">
-            <img src="./img/img1.jpg" alt="img" class="h-12 w-12 rounded-full">
-            <span class="flex flex-col">
-                <h1 class="font-bold">Rix Methil</h1>
-                <p class="text-sm text-gray-400">rix123@gmail.com</p>
-            </span>
+
+
+        <div id="nav-dialouge" class="lg:hidden  flex flex-col md:block p-2 bg-gray-800">
+            <button class="p-2 md:hidden" onclick="handlemenu()"></button>
+            <div class="md:block flex flex-wrap flex-col-6">
+                <div class="flex flex-row gap-0">
+                    <img src="./img/img1.jpg" alt="img" class="h-12 w-12 rounded-full">
+                    <span class="flex flex-col">
+                        <h1 class="font-bold">Rix Methil</h1>
+                        <p class="text-sm text-gray-400">rix123@gmail.com</p>
+                    </span>
+                </div>
+            </div>
+            <nav class="left-0 w-70 justify-between bg-white-800 py-6 shadow-md flex flex-row overflow-hidden">
+                <div class=" mt-0 ml-15 h-full">
+
+
+                    <div class="flex flex-col gap-4 mt-10 text-gray-400">
+                        <h1 class="text-[10px] text-gray-400">MANAGE</h1>
+
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-chart-pie"></i>Dashboard</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-wallet"></i>My
+                            wallet</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-calendar-days"></i>Calender</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-tent-arrow-left-right"></i>Recent transation</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-square-poll-vertical"></i>statistics</a>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-10 text-gray-400">
+                        <h1 class="text-[10px] text-gray-400">SETTINGS</h1>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-gear"></i>setting</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-message"></i>my
+                            message</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-bell"></i>notification</a>
+
+                    </div>
+                    <div class="flex flex-col gap-4 mt-20 text-gray-400">
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-moon"></i>theme</a>
+                        <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
+                                class="fa-solid fa-right-from-bracket"></i>logout</a>
+                    </div>
+                </div>
+
+            </nav>
+
+
         </div>
     </div>
-
-    <div class=" mt-0 ml-15 h-full ">
-
-        <div class="flex flex-col gap-4 mt-10 text-gray-400">
-            <h1 class="text-[10px] text-gray-400">MANAGE</h1>
-
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                    class="fa-solid fa-chart-pie"></i>Dashboard</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-wallet"></i>My
-                wallet</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                    class="fa-solid fa-calendar-days"></i>Calender</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                    class="fa-solid fa-tent-arrow-left-right"></i>Recent transation</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                    class="fa-solid fa-square-poll-vertical"></i>statistics</a>
-        </div>
-        <div class="flex flex-col gap-4 mt-10 text-gray-400">
-            <h1 class="text-[10px] text-gray-400">SETTINGS</h1>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-gear"></i>setting</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-message"></i>my
-                message</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                    class="fa-solid fa-bell"></i>notification</a>
-
-        </div>
-        <div class="flex flex-col gap-4 mt-20 text-gray-400">
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i class="fa-solid fa-moon"></i>theme</a>
-            <a href="#" class="hover:text-blue-400 text-sm flex gap-2"><i
-                    class="fa-solid fa-right-from-bracket"></i>logout</a>
-        </div>
     </div>
-
-</div> 
-
-   <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
