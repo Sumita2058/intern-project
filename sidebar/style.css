@@ -1,5 +1,12 @@
 html, body{
-    overflow-y: hidden;
     overflow-x: hidden;
 }
-    
+.dark {
+    --bg-color: #181818; 
+    --text-color: #fff; 
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}

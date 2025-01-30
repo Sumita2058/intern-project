@@ -3,22 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- tailwind css -->
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <!--font icon cdn  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <!-- style.css -->
-         <link rel="stylesheet" href="style.css"/>
+    <title>Dark Mode</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" />
+    <style>
+        .dark {
+            --bg-color: #181818; 
+            --text-color: #fff; 
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+    </style>
 </head>
 <body>
-    <div class="grid grid-cols-1 md:grid-cols-4 md:gap-2 gap-4">
-            <div class="bg-blue-500 w-full md:col-span-1 md:block hidden">Web</div>
-            <div class="bg-blue-500 col-span-3">Navbar</div>
-            <div class="bg-blue-500 w-full col-span-1 md:hidden block h-screen">Mobile</div>
+    <div class="flex items-center justify-center h-screen">
+        <button id="darkModeToggle" class="bg-transparent p-2 rounded-full">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.75c0-.621-.504-1.125-1.125-1.125h-8a2.25 2.25 0 00-2.25 2.25v10.5a2.25 2.25 0 002.25 2.25h8c.621 0 1.125-.504 1.125-1.125v-10.5zM12 3v10.5m0-10.5h8.25" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.75c0-.621-.504-1.125-1.125-1.125h-8a2.25 2.25 0 00-2.25 2.25v10.5a2.25 2.25 0 002.25 2.25h8c.621 0 1.125-.504 1.125-1.125v-10.5zM9.75 15c0 .621.504 1.125 1.125 1.125h4.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25h-4.5a2.25 2.25 0 00-2.25 2.25v6.75z" />
+            </svg>
+        </button>
     </div>
 
+    <script>
+        const darkModeToggle = document.getElementById('darkModeToggle');
+        const sunIcon = darkModeToggle.querySelector('svg:first-child');
+        const moonIcon = darkModeToggle.querySelector('svg:last-child');
+
+        darkModeToggle.addEventListener('click', () => {
+            document.documentElement.classList.toggle('dark'); 
+            localStorage.setItem('theme', document.documentElement.classList.contains('dark') ? 'dark' : 'light'); 
+
+            // Toggle icon visibility
+            sunIcon.classList.toggle('hidden');
+            moonIcon.classList.toggle('hidden');
+        });
+
+        // Check for initial theme preference and set initial icon visibility
+        const currentTheme = localStorage.getItem('theme');
+        if (currentTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+            sunIcon.classList.add('hidden');
+            moonIcon.classList.remove('hidden');
+        }
+    </script>
 </body>
 </html>
