@@ -1,0 +1,44 @@
+body{
+    overflow-y: hidden;
+}
+.dotsContainer .active{
+    background-color: rgb(0, 153, 255);
+}
+/* animation */
+@keyframes next1 {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+    
+}
+@keyframes next2 {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0%;
+    }
+    
+}
+/* animation */
+@keyframes pre1 {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 100%;
+    }
+    
+}
+@keyframes pre2 {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0%;
+    }
+    
+}

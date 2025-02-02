@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BEST BOOK</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- tailwind css -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+<body>
+    <div class="bg-gray-600 w-full h-full">
+        <div class="grid grid-cols-2 gap-2 p-10">
+            <div class="text-white px-10 ">
+                <div class="flex flex-col mt-50 mr-15 mb-10">
+                    <h1 class="font-bold text-5xl mb-2">Welcome to Online <br> Book Store</h1>
+                    <p class="text-lg">The webpage displays a clean and modern design for an online bookstore.
+                        At the top, the site name "Best Sellers" is visible, along with links to other pages like
+                        "Just another carousel Nothing4us".
+                    </p>
+                </div>
+                <div class="flex flex-rows gap-10 mr-15">
+                    <h2 class="flex flex-col">
+                        <p class="flex gap-2 items-center text-lg font-bold mr-15"><i class="fa-solid fa-book"></i>68+k</p>
+                        <span class="text-sm">Book Collections</span>
+                    </h2>
+                    <h2 class="flex flex-col ">
+                        <p class="flex gap-2 items-center text-lg font-bold"><i class="fa-solid fa-user"></i>25,634</p>
+                        <span class="text-sm">Customers </span>
+                    </h2>
+
+                </div>
+                <div class="bg-pink-500 w-50 hover:bg-pink-900 text-white mr-15 p-4 mt-10 rounded-md">
+                    <button class="font-semibold  flex items-center gap-2"><p>Go to Collections</p> 
+                         <span><i class="fa-solid fa-arrow-right"></i></span></button>
+                               
+                </div>
+              
+            </div>
+            
+           <div class="mt-40">
+            <div id="img" class="book relative w-full h-[400px] mt-auto mr-[20%] rounded-lg  ">
+                <div class="absolute flex flex-rows overflow-hidden gap-6 w-full h-full">
+                  <img src="./image/book1.jpg" alt="Image 1" class="w-[30%] h-full flex rounded-2xl" />
+                  <img src="./image/book2.jpeg" alt="Image 2" class="w-[30%] h-full flex -left-full rounded-2xl" />
+                  <img src="./image/book3.jepg.jpg" alt="Image 3" class="w-[35%] h-full flex -left-full rounded-2xl" />
+                  <img src="./image/book4.jpg" alt="image" class="w-[30%] h-full flex -left-full rounded-2xl" />
+                  <img src="./image/book5.png" alt="image" class="w-[30%] h-full flex -left-full rounded-2xl"/>
+                  <img src="./image/book6.webp" alt="image" class="w-[30%] h-full flex -left-full rounded-2xl"/>
+                  </div>
+              </div>
+
+               <div class="dotsContainer flex flex-rows gap-3 cursor-pointer justify-center mt-4">
+                <div class="dot active" attr="0" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                <div class="dot" attr="2" onclick="switchImage(this)"><i class="fa-regular fa-square  hover:bg-gray-800  transition duration-300"></i></div>
+                <div class="dot" attr="3" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                <div class="dot" attr="4" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                <div class="dot" attr="5" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                <div class="dot" attr="5" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+            </div> 
+           </div>
+<div class="h-90 w-70 pr-50 rounded-r-full rounded-t-full  bg-gray-800"></div>
+        
+    <!-- <div class="">
+         <div class="imagecontainer">
+               
+                <div class="image">
+                
+                    <img class="active"
+                      src="./image/book1.jpg" 
+                      alt="Sample Image" 
+                      class="w-60 h-full object-cover rounded-lg"
+                    />
+                
+                    
+                     <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 mr-64 mb-40">
+                      <h1 class="text-white text-4xl font-bold text-center px-4  rounded-r-full bg-purple-400">
+                        Bestseller
+                      </h1>
+                      <span class="mt-20 text-lg text-white">Mademoiselle</span>
+                      <p class="text-white text-md mb-0">epic drama</p>
+                    </div>
+                  </div> 
+
+
+
+                  <div class="">
+                    <img src="./image/book2.jpeg" alt="img"> 
+                    <h4>Bestseller</h4>
+                    <span>The Raven</span> 
+                </div>
+                 <div class="">
+                    <img src="./image/book3.jepg.jpg" alt="img"> 
+                     <h4>Bestseller</h4>
+                    <span>The Raven</span> 
+                 </div>
+                <div class="">
+                    <img src="./image/book4.jpg" alt="img">
+                     <h4>Bestseller</h4>
+                    <span>The Raven</span> 
+                 </div>
+                <div class="">
+                    <img src="./image/book5.png" alt="img"> 
+                    <span>The Raven</span> 
+               </div>
+                <div class="">
+                    <img src="./image/book6.webp" alt="img"> 
+                    <h4>Bestseller</h4>
+                    <span>The Raven</span> 
+            </div>  
+    </div> -->
+
+            
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
