@@ -12,12 +12,12 @@
     <!-- tailwind css -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <!-- style.css -->
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="style.css" />
 
 </head>
 
 <body>
-    <div class="bg-gray-600 w-full h-full">
+    <div class="bg-gradient-to-b from-blue-700 via-blue-900 to-transparent w-full h-full">
         <div class="grid grid-cols-2 gap-2 p-10">
             <div class="text-white px-10 ">
                 <div class="flex flex-col mt-50 mr-15 mb-10">
@@ -29,7 +29,8 @@
                 </div>
                 <div class="flex flex-rows gap-10 mr-15">
                     <h2 class="flex flex-col">
-                        <p class="flex gap-2 items-center text-lg font-bold mr-15"><i class="fa-solid fa-book"></i>68+k</p>
+                        <p class="flex gap-2 items-center text-lg font-bold mr-15"><i class="fa-solid fa-book"></i>68+k
+                        </p>
                         <span class="text-sm">Book Collections</span>
                     </h2>
                     <h2 class="flex flex-col ">
@@ -39,89 +40,130 @@
 
                 </div>
                 <div class="bg-pink-500 w-50 hover:bg-pink-900 text-white mr-15 p-4 mt-10 rounded-md">
-                    <button class="font-semibold  flex items-center gap-2"><p>Go to Collections</p> 
-                         <span><i class="fa-solid fa-arrow-right"></i></span></button>
-                               
+                    <button class="font-semibold  flex items-center gap-2">
+                        <p>Go to Collections</p>
+                        <span><i class="fa-solid fa-arrow-right"></i></span>
+                    </button>
+
                 </div>
-              
+
             </div>
-            
-           <div class="mt-40">
-            <div id="img" class="book relative w-full h-[400px] mt-auto mr-[20%] rounded-lg  ">
-                <div class="absolute flex flex-rows overflow-hidden gap-6 w-full h-full">
-                  <img src="./image/book1.jpg" alt="Image 1" class="w-[30%] h-full flex rounded-2xl" />
-                  <img src="./image/book2.jpeg" alt="Image 2" class="w-[30%] h-full flex -left-full rounded-2xl" />
-                  <img src="./image/book3.jepg.jpg" alt="Image 3" class="w-[35%] h-full flex -left-full rounded-2xl" />
-                  <img src="./image/book4.jpg" alt="image" class="w-[30%] h-full flex -left-full rounded-2xl" />
-                  <img src="./image/book5.png" alt="image" class="w-[30%] h-full flex -left-full rounded-2xl"/>
-                  <img src="./image/book6.webp" alt="image" class="w-[30%] h-full flex -left-full rounded-2xl"/>
-                  </div>
-              </div>
 
-               <div class="dotsContainer flex flex-rows gap-3 cursor-pointer justify-center mt-4">
-                <div class="dot active" attr="0" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
-                <div class="dot" attr="2" onclick="switchImage(this)"><i class="fa-regular fa-square  hover:bg-gray-800  transition duration-300"></i></div>
-                <div class="dot" attr="3" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
-                <div class="dot" attr="4" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
-                <div class="dot" attr="5" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
-                <div class="dot" attr="5" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
-            </div> 
-           </div>
-<div class="h-90 w-70 pr-50 rounded-r-full rounded-t-full  bg-gray-800"></div>
-        
-    <!-- <div class="">
-         <div class="imagecontainer">
-               
-                <div class="image">
-                
-                    <img class="active"
-                      src="./image/book1.jpg" 
-                      alt="Sample Image" 
-                      class="w-60 h-full object-cover rounded-lg"
-                    />
-                
-                    
-                     <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 mr-64 mb-40">
-                      <h1 class="text-white text-4xl font-bold text-center px-4  rounded-r-full bg-purple-400">
-                        Bestseller
-                      </h1>
-                      <span class="mt-20 text-lg text-white">Mademoiselle</span>
-                      <p class="text-white text-md mb-0">epic drama</p>
+
+
+            
+                <div class="container w-full bg-red-900 h-[400px] rounded-lg shadow-sm mt-40 overflow-hidden">
+                    <div  class="image flex flex-rows w-full h-full overflow-hidden">
+                        <div id="pre" class="imagecontainer relative gap-2 flex flex-rows overflow-hidden">
+
+                            <img src="./image/book1.jpg" alt="Sample Image"
+                                class=" w-300 h-100 p-6 rounded-4xl" />
+
+                            <div class="absolute inset-0 flex flex-col items-center justify-center p-6  bg-opacity-50 mb-80">
+                                <h1
+                                    class="text-white text-lg w-38 font-bold text-center p-2 mr-9 mb-36 rounded-r-full bg-purple-600">
+                                    Bestseller
+                                </h1>
+                                <span class="mt-6 text-2xl text-black">Mademoiselle</span>
+                                 <p class=" text-lg text-black">epic drama</p> 
+                            </div>
+
+
+
+                        </div>
+                        <div id="active" class="imagecontainer relative flex flex-rows gap-6 overflow-hidden">
+
+                            <img src="./image/book2.jpeg" alt="Sample Image" class=" w-300 h-100 p-6 rounded-4xl" />
+
+                            <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 mb-80">
+                                <h1
+                                    class="text-white text-lg w-38 font-bold text-center p-2 mr-9 mb-36 rounded-r-full bg-purple-600">
+                                    Bestseller
+                                </h1>
+                                <span class="mt-6  text-2xl  text-black">women in the<br>dark</span>
+                                
+                            </div>
+
+
+                        </div>
+                        <div id="next" class="imagecontainer relative flex flex-rows gap-6 overflow-hidden">
+
+                            <img src="./image/book3.jepg.jpg" alt="Sample Image" class=" w-300 h-100 p-6 rounded-4xl" />
+
+                            <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 mb-80 ">
+                                <h1
+                                    class="text-white text-lg w-38 font-bold text-center p-2 mr-9 mb-36 rounded-r-full bg-purple-600">
+                                    Bestseller
+                                </h1>
+                                <span class="mt-6 text-2xl font-semibold text-black">The Raven</span>
+                                
+                            </div>
+
+
+
+                        </div>
+                     <div class="imagecontainer relative flex flex-rows gap-6 overflow-hidden">  
+                            <img src="./image/book4.jpg" alt="Sample Image" class=" w-300 h-100 p-6 rounded-4xl" />
+
+                            <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 ">
+                                <h1
+                                    class="text-white text-lg w-38 font-bold text-center p-2 mr-8 mb-120 rounded-r-full bg-purple-600">
+                                    Bestseller
+                                </h1>
+                            </div>
+
+
+
+                        </div>
+                        <div class="imagecontainer relative flex flex-rows gap-6 overflow-hidden">
+
+                            <img src="./image/book5.png" alt="Sample Image" class=" w-300 h-100 p-6 rounded-4xl" />
+
+                            <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 ">
+                                <h1
+                                    class="text-white text-lg w-38 font-bold text-center p-2 mr-8 mb-120 rounded-r-full bg-purple-600">
+                                    Bestseller
+                                </h1>
+                            </div>
+
+
+                        </div>
+                        <div class="imagecontainer relative flex flex-rows gap-6 overflow-hidden">
+
+                            <img src="./image/book6.webp" alt="Sample Image" class="  w-300 h-100 p-6 rounded-4xl" />
+
+                            <div class="absolute  inset-0 flex flex-col items-center justify-center  bg-opacity-50 ">
+                                <h1  class="text-white text-lg w-38 font-bold text-center p-2 mr-8 mb-120 rounded-r-full bg-purple-600">
+                                    Bestseller
+                            </h1>
+                            </div>
+
+
+
+                        </div> 
                     </div>
-                  </div> 
-
-
-
-                  <div class="">
-                    <img src="./image/book2.jpeg" alt="img"> 
-                    <h4>Bestseller</h4>
-                    <span>The Raven</span> 
+                    <div class="dotsContainer flex flex-rows gap-3 cursor-pointer justify-center mt-110">
+                        <div class="dot active" attr="0" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                        <div class="dot" attr="2" onclick="switchImage(this)"><i class="fa-regular fa-square  hover:bg-gray-800  transition duration-300"></i></div>
+                        <div class="dot" attr="3" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                        <div class="dot" attr="4" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                        <div class="dot" attr="5" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
+                        <div class="dot" attr="5" onclick="switchImage(this)"><i class="fa-regular fa-square hover:bg-gray-800  transition duration-300"></i></div>
                 </div>
-                 <div class="">
-                    <img src="./image/book3.jepg.jpg" alt="img"> 
-                     <h4>Bestseller</h4>
-                    <span>The Raven</span> 
-                 </div>
-                <div class="">
-                    <img src="./image/book4.jpg" alt="img">
-                     <h4>Bestseller</h4>
-                    <span>The Raven</span> 
-                 </div>
-                <div class="">
-                    <img src="./image/book5.png" alt="img"> 
-                    <span>The Raven</span> 
-               </div>
-                <div class="">
-                    <img src="./image/book6.webp" alt="img"> 
-                    <h4>Bestseller</h4>
-                    <span>The Raven</span> 
-            </div>  
-    </div> -->
+                
+                </div> 
+                    
+
+           </div> 
+          
+        </div>
+        </div>
+
+
 
             
-        </div> 
-    </div>
-    <script src="script.js"></script>
+        </div>
+        <script src="script.js"></script>
 </body>
 
 </html>

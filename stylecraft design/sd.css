@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    transition: all .8s ease-in;
+}
+
+.btn:hover::before {
+    width: 200px;
+    height: 200px;
+}
+.main .home .content .action .btn::before {
+    background: hsl(0, 1%, 64%);
+    }
+
+.btn:hover::before {
+    background:red;
+}
+
