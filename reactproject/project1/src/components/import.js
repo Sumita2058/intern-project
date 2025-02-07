@@ -1,4 +1,9 @@
 export {default as Navbar} from "./Navbar/Navbar";
 export {default as Footer} from "./Footer/Footer";
 export {default as ResponsiveMenu} from "./Navbar/ResponsiveMenu";
-export {default as Hero} from "./Hero/Hero"
+export {default as Hero} from "./Hero/Hero";
+export {default as Information} from "./Information/Information";
+export {default as Destination} from "./Destination/Destination";
+export {default as Destinationpicture} from "./Destinationpicture/Destinationpicture";
+export {default as Featured} from "./Featured/Featured";
+export {default as Article} from "./Article/Article";

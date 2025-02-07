@@ -10,7 +10,7 @@ const Navbar = () => {
     setshowMenu(!showMenu); 
   };
   return (
-    <div className="relative m-1 w-full rounded-2xl bg-blue-200 text-white">
+    <div className="relative  w-full rounded-2xl bg-blue-200 text-white">
       <div className="conatiner flex justify-between items-center p-4 ">
     <div className="flex flex-row">
     <div className="items-center md:hidden">
