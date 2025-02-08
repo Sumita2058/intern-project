@@ -7,32 +7,32 @@ import { RxCross2 } from "react-icons/rx";
 const Navbar = () => {
   const [showMenu, setshowMenu] = useState(false);
   const toggleMenu = () => {
-    setshowMenu(!showMenu); 
+    setshowMenu(!showMenu);
   };
   return (
-    <div className="relative  w-full rounded-2xl bg-blue-200 text-white">
-      <div className="conatiner flex justify-between items-center p-4 ">
-    <div className="flex flex-row">
-    <div className="items-center md:hidden">
-          {showMenu ? (
-            <RxCross2
-              onClick={toggleMenu}
-              className="cursor-pointer  fixed top-5 left-5 z-50  transition-all"
-              size={30}
-            />
-          ) : (
-            <HiMenu
-              onClick={toggleMenu}
-              className="cursor-pointer transition-all"
-              size={30}
-            />
-          )}
+    <div className=" relative   rounded-md bg-blue-300/30 backdrop-blur-sm  text-white mx-10">
+      <div className=" max-w-6xl  mx-auto flex justify-between items-center">
+        <div className="flex flex-row">
+          <div className="items-center md:hidden">
+            {showMenu ? (
+              <RxCross2
+                onClick={toggleMenu}
+                className="cursor-pointer  fixed top-5 left-5 z-50  transition-all"
+                size={30}
+              />
+            ) : (
+              <HiMenu
+                onClick={toggleMenu}
+                className="cursor-pointer transition-all"
+                size={30}
+              />
+            )}
+          </div>
+          <div className="text-2xl flex p-2 justify-between">
+            <span>Travelx</span>
+          </div>
         </div>
-        <div className="text-2xl flex justify-between">
-          <span>Travelx</span>
-        </div>
-    </div>
-        
+
         <nav className="hidden md:block justify-center items-center">
           <ul className="flex items-center gap-8 ">
             {Navlinks.map(({ id, name, link }) => (
@@ -44,13 +44,12 @@ const Navbar = () => {
             ))}
           </ul>
         </nav>
-        <div className="flex gap-8 text-md items-center">
+        <div className="flex gap-6 text-md items-center">
           <span className="hover:text-gray-100 duration-300">sign up</span>
-          <button className="bg-green-200 hover:bg-gray-300 duration-300 rounded-4xl p-1">
+          <button className="bg-black hover:bg-gray-500 duration-300 w-14 rounded-2xl p-1">
             login
           </button>
         </div>
-        
       </div>
       <ResponsiveMenu showMenu={showMenu} />
     </div>
