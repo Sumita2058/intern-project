@@ -11,9 +11,9 @@ const Navbar = () => {
   };
   return (
     <div className=" relative   rounded-md bg-blue-300/30 backdrop-blur-sm  text-white mx-10">
-      <div className=" max-w-6xl  mx-auto flex justify-between items-center">
+      <div className=" max-w-7xl  mx-auto flex justify-between items-center">
         <div className="flex flex-row">
-          <div className="items-center md:hidden">
+          <div className="flex items-center md:hidden">
             {showMenu ? (
               <RxCross2
                 onClick={toggleMenu}
@@ -34,7 +34,7 @@ const Navbar = () => {
         </div>
 
         <nav className="hidden md:block justify-center items-center">
-          <ul className="flex items-center gap-8 ">
+          <ul className="flex items-center top-0 gap-8 ">
             {Navlinks.map(({ id, name, link }) => (
               <li key={id} className="py-6 hover:text-gray-100 duration-100">
                 <a href={link} className="inline-block text-md font-semibold">
@@ -50,7 +50,7 @@ const Navbar = () => {
             login
           </button>
         </div>
-      </div>
+      </div> 
       <ResponsiveMenu showMenu={showMenu} />
     </div>
   );

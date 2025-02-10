@@ -7,7 +7,7 @@ const Footer = () => {
         setCurrentYear(new Date().getFullYear());
       }, []);
   return (
-    <div className="relative bg-gray-800 p-8 w-full rounded-lg lg:block hidden text-white">
+    <div className="relative container bg-gray-800 p-8 w-full rounded-lg lg:block hidden text-white">
       <div className="grid col-span-1 lg:grid-cols-12  gap-3">
         <div className="flex flex-col gap-2 text-left lg:col-span-6">
           <h1 className="font-bold text-lg">TravelX</h1>

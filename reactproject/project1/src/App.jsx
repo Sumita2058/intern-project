@@ -8,9 +8,9 @@ import Sectionbg from './components/Sectionbg/Sectionbg';
 
 function App() {
   return (
-  <div className="relative bg-white text:black overflow-x-hidden">
+  <div className="max-w-1200 relative bg-white text:black overflow-x-hidden">
    
-    <div className=" w-full flex flex-col gap-10">
+    <div className=" w-full flex flex-col gap-8">
       <Hero/>
       <Information/>
        <Destination/>

@@ -8,7 +8,7 @@ import {
 } from "../../image";
 const Article = () => {
   return (
-    <div className="p-20 grid grid-cols-2 gap-8">
+    <div className="container grid grid-cols-1 md:grid-cols-2 gap-8">
       <div className="flex flex-col gap-4">
         <p className="uppercase text-gray-700">Resources</p>
         <h1 className="font-bold text-4xl text-black">Latest Article</h1>
