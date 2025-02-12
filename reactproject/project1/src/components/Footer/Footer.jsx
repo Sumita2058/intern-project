@@ -20,7 +20,7 @@ const Footer = () => {
           <span className="font-bold text-lg">Get in Touch</span>
           <p>Example@gmail.com</p>
           <div className="bg-blue-200 h-[1px] w-40"></div>
-          <div className="mt-4 flex  p-2">
+          <div className="mt-4 flex p-2">
           <div className="text-white flex flex-row gap-3 items-center">
             <FaLinkedin className="text-md" />
             <FaFacebook className="text-md" />

@@ -10,7 +10,7 @@ const Navbar = () => {
     setshowMenu(!showMenu);
   };
   return (
-    <div className=" relative   rounded-md bg-blue-300/30 backdrop-blur-sm  text-white mx-10">
+    <div className=" relative p-8  rounded-md bg-gray-400/30 backdrop-blur-md  text-white mx-10">
       <div className=" max-w-7xl  mx-auto flex justify-between items-center">
         <div className="flex flex-row">
           <div className="flex items-center md:hidden">

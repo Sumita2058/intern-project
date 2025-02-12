@@ -4,7 +4,7 @@ import { Navbar } from "../import";
 
 const Hero = () => {
   return (
-    <div className="relative   text-white ">
+    <div className="relative text-white ">
       
       <div className="absolute z-10 top-5 w-full px-4">
         <Navbar />
