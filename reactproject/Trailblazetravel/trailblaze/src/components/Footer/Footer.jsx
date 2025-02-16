@@ -30,7 +30,7 @@ const Footer = () => {
   ];
 
   return (
-    <div className="text-blue p-16 bg-gray-800">
+    <div className="text-blue p-20 bg-gray-800">
       <div className="">
         <div className="grid md:grid-cols-6 grid-cols-1">
 
@@ -55,13 +55,13 @@ const Footer = () => {
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas
               delectus expedita reiciendis illo soluta voluptatum.
             </p>
-            <div className="flex bg-blue w-full justify-between rounded-full p-1 border-1 border-solid">
+            <div className=" flex bg-blue md:w-full z-10 justify-between  rounded-full p-1 border-1 border-solid">
               <input
-                className="px-3 py-2 text-gray-600 bg-transparent focus:outline-none placeholder-gray-400"
+                className="px-3 py-2 text-gray-600 bg-transparent focus:outline-none placeholder-gray-400 w-36 sm:w-full"
                 type="text"
                 placeholder="enter your email"
               />
-              <button className="px-5 py-2 text-blue bg-gray-700 rounded-full text-sm">
+              <button className="md:px-5 px-2 py-1  md:py-2 text-blue bg-gray-700 rounded-full text-sm">
                 Search
               </button>
             </div>

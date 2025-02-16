@@ -7,7 +7,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Hero = () => {
   return (
-    <div className="">
+    <div className="p-20 rounded-md">
     <div
       className="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center"
       style={{ backgroundImage: `url(${home})` }}

@@ -40,7 +40,7 @@ const Locationpicture = () => {
               className="rounded-2xl bg-no-repeat bg-cover"
               style={{ backgroundImage: `url(${value.image})`, height: "70vh", }}
             >
-              <div className=" space-y-46 md:space-y-70">
+              <div className=" space-y-46 md:space-y-78">
                 <div className="flex items-center justify-between p-4">
                   <p className="text-white px-4 py-2 text-xl bg-white/30 backdrop-blur-none p-8 rounded-full">
                     {value.day}
