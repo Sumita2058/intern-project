@@ -30,12 +30,12 @@ const Footer = () => {
   ];
 
   return (
-    <div className="text-blue p-8 bg-gray-800">
+    <div className="text-blue p-16 bg-gray-800">
       <div className="">
-        <div className="grid grid-cols-6">
+        <div className="grid md:grid-cols-6 grid-cols-1">
 
           {footerData.map((section, index) => (
-            <div key={index} className="col-span-1">
+            <div key={index} className="md:col-span-1 col-span-3">
               <h1 className="font-bold text-lg mb-4">{section.title}</h1>
               <ul className="space-y-2">
                 {section.links.map((link, linkIndex) => (
@@ -79,7 +79,7 @@ const Footer = () => {
           </div>
         </div>
        
-            <div className="mt-6 text-center text-sm text-gray-400">
+            <div className="mt-20 text-center font-semibold text-sm text-gray-400">
             <p>&copy; <span> {currentYear}- codebrowser, All rights reserved</span>
             </p>
             </div>

@@ -7,15 +7,15 @@ import Howitwork from './components/Howitwork/Howitwork'
 import Locationpicture from './components/Locationpicture/Locationpicture'
 import Package from './components/Package/Package'
 import Tourism from './components/Tourism/Tourism'
-import Location from './components/location/location'
+import Location from './components/Location/Location'
 
 function App() {
   
   return (
    
-<div className="max-w-1200 relative bg-gray-100 text:black overflow-x-hidden">
+<div className="max-w-1200 relative  bg-gray-100 text:black overflow-x-hidden">
 
-    <div className="mt-0 ">
+    <div className="space-y-2 ">
       
       <Hero/>
       <Tourism/>

@@ -4,47 +4,70 @@ import { IoIosArrowDown } from "react-icons/io";
 import { BsCalendar2DateFill } from "react-icons/bs";
 import { FaUser } from "react-icons/fa";
 import Navbar from "../Navbar/Navbar";
-const Hero = () =>{
-    return(
-<div className="relative top-0">
-<div className="absolute z-8 top-2 w-full">
+
+const Hero = () => {
+  return (
+    <div className="">
+    <div
+      className="relative w-full min-h-screen bg-cover bg-center flex flex-col items-center"
+      style={{ backgroundImage: `url(${home})` }}
+    >
+      <div className="absolute inset-0 bg-black/50"></div>
+
+      <div className="relative z-10 w-full">
         <Navbar />
       </div>
-      <div className="relative flex items-center justify-center">
-   <img src={home} alt="img" className="rounded-4xl h-full p-4" />
-   <div className="grid grid-rows-5  flex-row gap-1 absolute z-10 inset-10 mt-55 text-center ">
-    <h1 className="row-span-2 text-white py-4 font-semibold text-8xl">Extraordinary natural and <br/> cultural charm</h1>
-    <p  className="row-span-1 text-white font-semibold text-2xl">Exploring indonesia is an unforgettable adventure.</p>
-    <div className="row-span-1  bg-white/30 backdrop-blur-none rounded-full h-14 w-[40%] flex flex-row text-white font-md text-2xl gap-4 ml-140 justify-center">
-         <span className="flex flex-row items-center  gap-6"><SlCalender />Date <IoIosArrowDown /> |</span> 
-            <span className="flex flex-row items-center gap-6"><BsCalendar2DateFill />Date <IoIosArrowDown /> |</span>
-            <span className="flex flex-row items-center gap-6"><FaUser />Date<IoIosArrowDown /> | </span>
-        <button className="rounded-full h-10 mt-2 items-center w-30  bg-white text-black">search</button>
-    </div> 
-    
-   </div>
-   
-    </div>
 
-    <div className="grid grid-cols-4 items-center justify-between mt-0">
-        <div className="bg-white px-8 py-8 m-8 rounded-lg">
-        <span className="font-md text-6xl">10M+ </span>
-        <p className="text-gray-600">total customer</p>
+      <div className="relative flex flex-col items-center text-center text-white mt-24 px-4">
+        <h1 className="font-medium text-xl md:text-6xl lg:text-7xl">
+          Extraordinary natural and <br /> cultural charm
+        </h1>
+        <p className="font-semibold text-[12px] md:text-2xl mt-4">
+          Exploring Indonesia is an unforgettable adventure.
+        </p>
+
+        <div className="mt-5 md:mt-16 w-full px-4">
+          <div className="flex flex-col md:flex-row bg-bgc backdrop-blur-md text-white rounded-full h-14 px-6 md:px-16 py-4 md:py-0 w-full md:w-[90%] lg:w-[50%] mx-auto gap-4 md:gap-6 items-center justify-center">
+            <div className="flex flex-row text-[10px] text-base gap-4 md:gap-6 justify-center">
+              <span className="flex items-center gap-2">
+                <SlCalender />
+                Date <IoIosArrowDown />|
+              </span>
+              <span className="flex items-center gap-2">
+                <BsCalendar2DateFill />
+                Date <IoIosArrowDown />|
+              </span>
+              <span className="flex items-center gap-2">
+                <FaUser />
+                Guests <IoIosArrowDown />|
+              </span>
+            </div>
+           <button className="rounded-full h-8 w-full md:w-auto px-4 bg-white text-black font-medium -mt-3 md:mt-0">
+              Search
+            </button>
+          </div>
         </div>
-        <div className="bg-white px-8 py-8 m-8  rounded-lg">
-         <span className="font-md text-6xl">09+</span>
-        <p className="text-gray-600"> years of experience</p>
-        </div>
-        <div className="bg-white px-8 py-8 m-8  rounded-lg">
-         <span className="font-md text-6xl">12k</span>
-        <p className="text-gray-600">total destination</p>
-        </div>
-        <div className="bg-white px-8 py-8 m-8  rounded-lg">
-       <span className="font-md text-6xl"> 0.5M</span>
-        <p className="text-gray-600">Average rating</p>
-        </div>
+      </div>
+
+     
     </div>
+    <div className="mt-6 md:absolute md:-mt-14 md:gap-6 md:left-1/2 md:-translate-x-1/2">
+        <div className="grid md:grid-cols-4 gap-8 text-center">
+          {[
+            { value: "10M+", label: "Total Customers" },
+            { value: "09+", label: "Years of Experience" },
+            { value: "12k", label: "Total Destinations" },
+            { value: "0.5M", label: "Average Rating" },
+          ].map((item, index) => (
+            <div key={index} className="bg-white px-8 py-6 rounded-lg shadow-md">
+              <span className="font-bold text-lg md:text-2xl">{item.value}</span>
+              <p className="text-gray-600 text-sm md:text-base">{item.label}</p>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-    );
+  );
 };
+
 export default Hero;

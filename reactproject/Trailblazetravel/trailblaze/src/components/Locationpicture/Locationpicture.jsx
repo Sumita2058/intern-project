@@ -1,61 +1,75 @@
-import { FaStar } from "react-icons/fa";
 import { package1, package2, package3 } from "../import";
+import { FaStar } from "react-icons/fa";
 
-const Locationpicture = () =>{
-    return(
-    <div className="grid grid-cols-12 p-20 gap-4">
-
-        <div className="relative col-span-4">
-            <img src={package1} alt="img" className="h-full w-full rounded-2xl" />
-            <div className="absolute z-10 inset-8">
-                <section className="flex flex-row justify-between">
-                    <p className="text-white px-4 py-2 text-xl bg-white/30 backdrop-blur-none p-8 rounded-full">7 day</p>
-                    <span className="text-white flex flex-row items-center gap-2 text-xl  bg-white/30 backdrop-blur-none rounded-full px-4 py-2"><FaStar className="text-yellow-400"/>4.9</span>
-                </section>
-                <section className="flex flex-row justify-between bg-white/30 backdrop-blur-none rounded-2xl p-4 text-white mt-120">
-                   <span className="flex flex-col ">
-                   <h1 className="text-gray-200">27 october</h1>
-                   <h2 className="text-bold text-2xl capitalize">bali tour packages</h2>
-                   </span>
-                    <p className="text-2xl">$285</p>
-                </section>
+const Locationpicture = () => {
+  const data = [
+    {
+      id: 1,
+      image: package1,
+      day: "7 days",
+      rating: "4.9",
+      date: "27 OCTOBER",
+      package: "bali tour packages",
+      amount: "$285",
+    },
+    {
+      id: 2,
+      image: package2,
+      day: "7 days",
+      rating: "4.9",
+      date: "27 OCTOBER",
+      package: "java tour packages",
+      amount: "$185",
+    },
+    {
+      id: 3,
+      image: package3,
+      day: "7 days",
+      rating: "4.9",
+      date: "27 OCTOBER",
+      package: "solo tour packages",
+              amount: "$235",
+    },
+  ];
+  return (
+    <section>
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 p-20">
+        {data.map((value, index) => (
+            <div
+              key={index}
+              className="rounded-2xl bg-no-repeat bg-cover"
+              style={{ backgroundImage: `url(${value.image})`, height: "70vh", }}
+            >
+              <div className=" space-y-46 md:space-y-70">
+                <div className="flex items-center justify-between p-4">
+                  <p className="text-white px-4 py-2 text-xl bg-white/30 backdrop-blur-none p-8 rounded-full">
+                    {value.day}
+                  </p>
+                  <div className="bg-white/30 backdrop-blur-none rounded-full px-4 py-2 flex justify-between items-center gap-3 text-xl text-white">
+                    <FaStar className="text-yellow-400" />
+                    <span>{value.rating}</span>
+                  </div>
+                </div>
+                <div className="flex  justify-between bg-bgc rounded-2xl p-8 m-3 text-white">
+                  <div className="flex flex-col">
+                    <span className="text-gray-200">{value.date}</span>
+                    <span className="text-bold text-2xl capitalize">
+                      {value.package}
+                    </span>
+                  </div>
+                  <div className="text-bold text-2xl capitalize">
+                    <span className="text-bold text-2xl capitalize">
+                      {value.amount}
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div></div>
             </div>
-        </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
-        <div className="relative  col-span-4">
-            <img src={package2} alt="img" className="h-full w-full rounded-2xl" />
-            <div className="absolute z-10 inset-8">
-                <section className="flex flex-row justify-between">
-                    <p className="text-white px-4 py-2 text-xl bg-white/30 backdrop-blur-none p-8 rounded-full">5 day</p>
-                    <span className="text-white flex flex-row items-center gap-2 text-xl  bg-white/30 backdrop-blur-none rounded-full px-4 py-2"><FaStar className="text-yellow-400"/>4.9</span>
-                </section>
-                <section className="flex flex-row justify-between bg-white/30 backdrop-blur-none rounded-2xl p-4 text-white mt-120">
-                    <div className="flex flex-col ">
-                    <h1 className="text-gray-200">27 october</h1>
-                    <h2 className="text-bold text-2xl capitalize">java tour packages</h2>
-                    </div>
-                    <p className="text-2xl">$192</p>
-                </section>
-            </div>
-        </div>
-
-        <div className="relative  col-span-4">
-            <img src={package3} alt="img" className="h-full w-full rounded-2xl" />
-            <div className="absolute z-10 inset-8">
-                <section className="flex flex-row justify-between">
-                    <p className="text-white px-4 py-2 text-xl bg-white/30 backdrop-blur-none p-8 rounded-full">3 day</p>
-                    <span className="text-white flex flex-row items-center gap-2 text-xl  bg-white/30 backdrop-blur-none rounded-full px-4 py-2"><FaStar className="text-yellow-400"/>4.9</span>
-                </section>
-                <section className="flex flex-row justify-between bg-white/30 backdrop-blur-none rounded-2xl p-4 text-white mt-120">
-                    <div className="flex flex-col ">
-                    <h1 className="text-gray-200">27 october</h1>
-                    <h2 className="text-bold text-2xl capitalize">solo tour packages</h2>
-                    </div>
-                    <p className="text-2xl">$235</p>
-                </section>
-            </div>
-        </div>
-    </div>
-    )
-}
 export default Locationpicture;
